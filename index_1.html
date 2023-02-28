@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="flex.css">
+    <script src="flex.js" async></script>
+    <title>Accueil</title>
+</head>
+<body>
+   <!--------------------------------la barre de menu ------------------------------------------>
+  <div class="menu">
+    <div class="logo"> 
+        <img src="images/logo.png">
+        <h2>ChimioTech</h2>
+    </div>
+    <div class="search">
+        <input type="text" id="search_input" placeholder="Search" >
+        <button id="search_btn"><img src="images/search.png"></button>
+    </div>
+    <div class="patient_list">
+        <a href="index.php"><button class="icon_group" title="notification"><img src="images/notification.png"></button></a>
+            <button class="icon_group" id="patient_nv" title="ajouter patient"><img src="images/add-user.png"></button>
+            <button class="icon_group" title="liste des patiens"><img src="images/group.png"></button>
+        
+        
+        
+    </div>
+  </div>
+  <!------------------------------------la page ------------------------------------------------>
+  <div class="page">
+    <div class="action">
+        <div class=action_group id="action_group">
+            <button class="action_btn" id="action_btn"><img src="images/home.png"></button>
+            <p class="paragraphe">Accueil</p>
+        </div>
+        <div class=action_group>
+            <button class="action_btn"><img src="images/dossier.png"></button>
+            <p class="paragraphe">Dossier</p>
+        </div>
+        <div class=action_group>
+            <button class="action_btn"><img src="images/add-user.png"></button>
+            <p class="paragraphe">Ajouter patient</p>
+        </div>
+        <div class=action_group>
+            <button class="action_btn"><img src="images/schedule.png"></button>
+            <p class="paragraphe">Calendrier</p>
+        </div>
+        <hr>
+        <div class=action_group>
+            <button class="action_btn"><img src="images/user.png"></button>
+            <p class="paragraphe">Profile</p>
+        </div>
+       <!-- <div class=action_group>
+            <button class="action_btn"><img src="images/gear.png"></button>
+            <p class="paragraphe">Paramètres</p>
+        </div>-->
+    </div>
+    <div class="accueil">
+         <div class="form_nv_patient">
+          <div class="secretaire">
+            <form >
+                <div class="form4">
+                  <input type="text" id="nom" required>
+                  <label  >Nom</label>
+                </div>
+                <div class="form4">
+                  <input type="text" id="prenom" pattern="[0-9]{10}" required>
+                  <label  >Prénom</label>
+                </div>
+                <div class="form4">
+                  <input type="text" id="profession"  required>
+                  <label  >Profession</label>
+                </div>
+                <div class="form4">
+                  <input type="Date" id="ddn"  required>
+                </div>
+                <div class="form4">
+                    <input type="text" id="ldn"  required>
+                    <label  >Lieu de naissance</label>
+                </div>
+                <div class="form4">
+                    <input type="text" id="adresse"  required>
+                    <label>Adresse</label>
+                </div>
+                <div class="form4">
+                    <input type="tel" id="tel2"  required>
+                    <label  >Tel</label>
+                </div>
+                <div class="form4">
+                    <input type="submit" id="save" value=" Enregistrer">
+                    <button id="plus" > + </button>
+                </div>
+              </form>
+            </div>
+        
+            <div class="medecin">
+                <form>
+                  <div class="form5">
+                    <input type="text" id="nom" required>
+                    <label  >Maladie</label>
+                  </div>
+                  <div class="form5">
+                    <input type="text" id="prenom" pattern="[0-9]{10}" required>
+                    <label  >Protocole</label>
+                  </div>
+                  <div class="form5">
+                    <input type="text" id="profession"  required>
+                    <label  >Traitement</label>
+                  </div>
+                  <div class="form5">
+                    <input type="text" id="ddn"  required>
+                    <label  >Traitement</label>
+                  </div>
+                  <div class="form5">
+                      <input type="text" id="ldn"  required>
+                      <label  >Type</label>
+                  </div>
+                  <div class="form5">
+                      <input type="text" id="adresse"  required>
+                      <label>Adresse</label>
+                  </div>
+                  <div class="form5">
+                      <input type="tel" id="tel2"  required>
+                      <label  >Tel</label>
+                  </div>
+                  <div class="form5">
+                    <input type="submit" id="save2" value=" Enregistrer">
+                </div>
+                </form>
+            </div>
+         </div>
+    </div>
+  </div>
+</body>
+</html>

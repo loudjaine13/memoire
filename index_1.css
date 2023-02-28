@@ -1,0 +1,241 @@
+body{
+    display: flex;
+    background-image:url('images/background_image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/*------------------la barre de menu ------------------------------------------*/
+.menu{
+    height: 75px;
+    display: flex;
+    position: fixed;
+    right: 4px;
+    left: 4px;
+    top: 4px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 60px;
+    margin-left: 18px;
+    margin-right: 10px;
+ }
+ .logo h2{
+    height: 33px;
+    font-family: cursive;
+    color: #0c014a;
+}
+.search{
+    display: flex;
+    align-items: center;
+    flex:1;
+    max-width: 500px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+#search_input{
+    height: 42px;
+    flex: 1;
+    width: 52px;
+    margin-right: 10px;
+    border-radius:200px;
+    border: none;
+    text-align: center;
+}
+#search_btn{
+    height: 42px;
+    width: 42px;
+    border-radius:21px;
+    border: none;
+}
+#search_btn img{
+    height: 25px;
+}
+#search_btn img:hover{
+    cursor: pointer;
+}
+#search_input:focus{
+    outline: none;
+}
+.patient_list{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.icon_group{
+    height: 42px;
+    width: 42px;
+    border-radius:21px;
+    border: none;
+    margin-right: 10px;
+}
+.icon_group img{
+    height: 28px;
+}
+.icon_group img:hover{
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+}
+.icon_group:hover{
+    cursor: pointer;
+}
+.page{
+    display: flex;
+}
+.action{
+    position: fixed;
+    top:90px;
+    border-radius: 250px;
+    height: 525px;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    backdrop-filter: blur(25px); 
+    overflow: hidden;
+    box-shadow: 0 14px 18px 12px rgba(0, 0, 0, 20% ), 0 25px 28px 0 rgba(0, 0, 0, 0.19);
+}
+.action_group{
+  display:flex;
+}
+.paragraphe{
+    color: white;
+    font-family: arial;
+    font-size: 16px;
+    margin-left: 30px;
+    height: 15px;
+}
+.paragraphe:hover{
+    color: rgb(205, 195, 195);
+    font-family: arial;
+    font-size: 17px;
+    cursor: pointer;
+}
+.action_btn{
+    height: 42px;
+    width: 42px;
+    border-radius:21px;
+    border: none; 
+    margin-left: 19px;
+}
+.action_btn img{
+    height: 31px;
+}
+.action_btn img:hover{
+    cursor: pointer;
+    height: 32px;
+}
+hr{
+    width: 40px;
+}
+.accueil {
+    box-shadow: 0 14px 18px 12px rgba(0, 0, 0, 20% ), 0 25px 28px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 42px;
+    height: 525px;
+    flex: 1; 
+    backdrop-filter: blur(25px); 
+    position: fixed;
+    right: 4px;
+    left: 95px;
+    top: 90px;
+    display: flex;
+    justify-content: space-evenly;
+ }
+ .form_nv_patient{
+    display: none;
+ }
+ .secretaire{
+   display: flex;
+ }
+ .medecin{
+    display: none;
+ }
+ .secretaire form, .medecin form{
+    padding-top: 25%;
+ }
+ .form4, .form5{
+    padding-bottom: 15px;
+    position: relative;
+
+}
+.form4 input, .form5 input{
+    height: 25px;
+    width: 300px;
+    border: none;
+    outline: none;
+    border-bottom: solid 2px #0c014a; 
+    background-color: transparent;
+    color: white;
+}
+.form4 label, .form5 label{
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    pointer-events: none;
+    transition: 0.5s;
+    position: absolute;
+    left: 0px;
+    top:0px;
+}
+.form4 input:focus ~ label, .form5  input:focus ~ label{
+    color:#0c014a;
+    font-size: 0.8rem;
+    font-weight: bold;
+    transform: translateY(-15px);
+}
+
+.form4 input:valid~label, .form5 input:valid~label{
+    color:#0c014a;
+    font-size: 0.75rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    transform: translateY(-15px);
+}
+#save{
+    background-color: #1475a2;
+    color: white;
+    height: 40px;
+    width: 177px;
+    border-radius:20px;
+    border: none;
+    font-size: 15px;
+    margin: 20px 15px 0px 38px;
+}
+#save:hover{
+    cursor: pointer;
+    background-color:#2089b9;
+}
+#save2{
+    background-color: #1475a2;
+    color: white;
+    height: 40px;
+    width: 177px;
+    border-radius:20px;
+    border: none;
+    font-size: 15px;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+#save2:hover{
+    cursor: pointer;
+    background-color:#2089b9;
+}
+#plus{
+    height: 42px;
+    width: 42px;
+    border-radius:21px;
+    border: none;
+    background-color: #1475a2;
+    color: white; 
+    position: absolute;
+    margin-top: 20px;
+}
+#plus:hover{
+    cursor: pointer;
+    background-color:#2089b9;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="login.js" async></script>
+    <title>test</title>
+</head>
+<body>
+    <div class="box1">
+      <div class="box11">
+        <img src="images/logo.png" alt="logo">
+        <h2>ChimioTech</h2>
+        <form >  
+            <div class="form1">        
+                  <input  type="text" id="uname1" required>
+                  <label for="uname1" >Nom d'utilisateur</label>
+            </div>
+            <div class="form1">
+                  <input type="password" id="pw1" required> 
+                  <label >Mot de passe</label>  
+            </div>   
+            <p id="parag_password">Mot de passe oublié ?</p>
+            <input type="submit" id="btn_login" value="Se connecter">
+        </form>
+        <p id="parag_box1">Vous n'avez pas de compte ?<span id="lien_box1">S'inscrire.</span></p>
+      </div>
+    </div>
+    <div class="box2">
+       <div class="box21">
+         <h2 >Créer un compte</h2> 
+         <span id="fermer_box2">&times;</span>
+         <form >
+           <div class="form2">
+             <input type="text" id="uname2"  required>
+             <label>Nom d'utilisateur</label>
+           </div>
+           <div class="form2">
+             <input type="text" id="email" required>
+             <label  >Email</label>
+           </div>
+           <div class="form2">
+             <input type="number" id="nbr" pattern="[0-9]{10}" required>
+             <label  >Tél</label>
+           </div>
+           <div class="form2">
+             <input type="password" id="pw2"  required>
+             <label  >Mot de passe</label>
+           </div>
+           <div class="form2">
+             <input type="password" id="conpw"  required>
+             <label  >Confirmer mot de passe</label>
+           </div>
+           <p id="erreur">mot de passe incorrect !</p></form>
+           <input type="submit" id="btn_signup" value="S'inscrire">
+         </form>
+       </div>
+    </div>
+    <div class="box3">
+        <div class="box31">
+          <span id="fermer_box3">&times;</span>
+          <h2 >Mot de passe oublié</h2>
+           <p id="parag">Entrez votre adresse e-mail ou votre numéro de téléphone pour récupérer votre compte </p>
+           <form > 
+            <div class="form3">
+              <input type="text" id="email2"  required>
+              <label  >Adresse e-mail ou téléphone</label>
+            </div>
+            <input type="submit" id="btn_password" value="récupérer">
+           </form>
+           <p id="parag_box3" >Vous n'avez pas de compte ?<span id="lien_box3">S'inscrire.</span></p>
+        
+        </div>
+    </div> 
+</body>
+</html>

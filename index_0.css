@@ -1,0 +1,168 @@
+body{
+    display: flex;
+    background-image:url('images/background_image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    justify-content: center;
+}
+.box1, .box2, .box3{
+    height: 430px;
+    width: 330px;
+    box-shadow: 0 14px 18px 12px rgba(0, 0, 0, 20% ), 0 25px 28px 0 rgba(0, 0, 0, 0.19);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+    border-radius: 20px;
+    backdrop-filter: blur(15px);  
+}
+.box1{
+    display: flex;
+}
+.box2{
+    display:none;
+}
+.box3{
+    display: none;
+}
+.box11, .box21, .box31{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+#fermer_box2{
+    position: absolute;
+    top: 2px;
+    right: 8px;
+    font: weight 8px;
+    font-size: 30px;
+    color: #0c014a;
+}
+#fermer_box2:hover{
+    cursor:pointer;
+    font-size: 35px;
+    font-weight: bold;
+}
+#fermer_box3{
+    position: absolute;
+    top: 2px;
+    right: 8px;
+    font: weight 8px;
+    font-size: 30px;
+    color: #0c014a;
+}
+#fermer_box3:hover{
+    cursor:pointer;
+    font-size: 35px;
+    font-weight: bold;
+}
+img{
+    padding-top: 15px;
+    height: 100px;
+    width:100px;
+}
+.box11 h2{
+    font-family: cursive;
+    margin-top: 0px;
+    color: #0c014a;
+}
+.box21 h2{
+    margin-top: 25px;
+    color: #0c014a;
+}
+.box31 h2{
+    margin-top: 25px;
+    color: #0c014a;
+}
+.form1, .form2, .form3{
+    padding-bottom: 15px;
+}
+.form1 input, .form2 input, .form3 input{
+    height: 25px;
+    width: 210px;
+    border: none;
+    outline: none;
+    border-bottom: solid 2px #1475a2 ;
+    background-color: transparent;
+    color: white;
+    position: relative;
+}
+.form1 label, .form2 label, .form3 label{
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    pointer-events: none;
+    transition: 0.5s;
+    position: absolute;
+    left:60px;
+}
+.form1  input:focus ~ label, .form2  input:focus ~ label, .form3  input:focus ~ label{
+    color:#1475a2;
+    font-size: 0.8rem;
+    font-weight: bold;
+    transform: translateY(-15px);
+}
+
+.form1 input:valid~label, .form2 input:valid~label, .form3 input:valid~label  {
+    color:#1475a2;
+    font-size: 0.75rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    transform: translateY(-15px);
+}
+#parag_password{
+    float: right;
+    margin: -8px 57px 30px ;
+    color:#0c014a;
+    font-family:system-ui ;
+    font-weight: bold;
+}
+#parag_password:hover{
+    cursor: pointer;
+    color:#1a0d69;
+}
+#btn_login, #btn_signup, #btn_password{
+    background-color: #1475a2;
+    color: white;
+    height: 40px;
+    width: 177px;
+    border-radius:20px;
+    border: none;
+    font-size: 15px;
+}
+#btn_login:hover, #btn_signup:hover, #btn_password:hover{
+    cursor: pointer;
+    background-color:#2089b9;
+    font-size: 16px;
+}
+#parag_box1{
+    font-family:Calibri;
+    color: rgb(255, 255, 255);
+    margin-top:57px;
+}
+#parag_box3{
+    font-family:Calibri;
+    color: rgb(255, 255, 255);
+    margin-top:126px;
+}
+#lien_box1, #lien_box3{
+    color:#1475a2;
+    font-family:system-ui ;
+    font-weight: bold;
+}
+#lien_box1:hover, #lien_box3:hover{
+    cursor: pointer;
+    color:#2089b9;
+}
+#erreur{
+    margin:-10px 0px 14px 58px;
+    display:none;
+}
+#parag{
+        font-family:Calibri;
+        color: #0c014a;
+        margin:43px 21px 32px ;
+        font-weight: bold;
+        text-align: center;
+}
